@@ -1,0 +1,52 @@
+.navegacion {
+	width: 100%;
+	max-width: 120em;
+	margin: auto;
+	background: linear-gradient(to bottom, 0,$lineal1 $lineal2 100%);
+	ul {
+		list-style: none;
+	}
+}
+.menu {
+	& > li {
+		position: relative;
+		display: inline-block;
+		& > a {
+			display: block;
+			padding: 1.3em 8em;
+			color: rgb(255, 255, 255);
+			font-family: 'Cinzel', serif;
+			text-decoration: none;
+		}
+	}
+	li {
+		a {
+			&:hover {
+				background: $bgnav;
+			}
+		}
+		&:hover {
+			.submenu {
+				display: block;
+			}
+		}
+	}
+}
+.submenu {
+	position: absolute;
+	background: linear-gradient(to bottom,$lineal1 $lineal2 100%);
+	width: 100%;
+	display: none;
+	z-index: 1000;
+	li {
+		a {
+			display: block;
+			padding: 1.3em;
+			color: #ffffff;
+			text-decoration: none;
+			text-align: center;
+			font-size: 1em;
+			font-family: 'Cinzel', serif;
+		}
+	}
+}

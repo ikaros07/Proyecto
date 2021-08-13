@@ -1,0 +1,184 @@
+@import "galeria";
+@import "navegador";
+@import "formulario";
+@import "colores";
+
+$width:6.2em;
+
+@mixin logos() {
+    border-radius: 1em;
+    width: $width*2;
+    height: 12.5em;
+    }
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	color: white;
+	background: url(../multimedia/imagenes/fondo.png);
+    background-color: $bgbody;
+    fondo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .banner {
+            width: 100%;
+        }
+    fondo-superposicion {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .logo {
+           @include logos
+        }
+        .logo2 {
+            @include logos
+        }
+    }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	color: gold;
+	font-family: 'Cinzel', serif;
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+}
+
+.sizeCarrousel {
+	width: 85%;
+	margin: 0 auto;
+    .imgCarrousel {
+        border-radius: 2em;
+    }
+}
+
+div {
+	text-align: center;
+}
+p {
+	font-family: 'Anaheim', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: none;
+	line-height: 1.5em;
+    .parrafo1 {
+        font-family: 'Anaheim', sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        text-transform: none;
+        line-height: 1.5em;
+        border-radius: 2em;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(to bottom,#460758 0,#84c5fa 100%);
+        border-top: double $brp 0.3em;
+        border-left: double $brp 0.3em;
+        border-right: double $brp 0.3em;
+        border-bottom: double $brp 0.3em;
+        margin: 1.5em;
+        padding: 1.8em;
+    }
+}
+
+.redes {
+	text-align: center;
+	line-height: 1.5em;
+    background-image: url(../multimedia/imagenes/fondo-2.jpg);
+        a {
+        text-decoration: none;
+        margin: 0 0.2em;
+        }   
+        .icons {
+            width: $width/2.3;
+            height: 2.3em;
+    }
+
+}
+.final{
+    background-image: url(../multimedia/imagenes/fondo-2.jpg);
+        a {
+        text-decoration: none;
+        margin: 0 0.2em;
+        }
+        .fondoDescargas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                .descargas {
+                position: absolute;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                .descargaIos {
+                    left: 60em;
+                    width: $width*2;
+                }
+                .descargaAndroid {
+                    left: 47em;
+                    width: $width*2;
+                }
+            }
+        }
+    }
+}
+    
+.cajaEquipamiento{
+    justify-content: initial;
+    line-height: 1.5em;
+  
+    .heroeName{
+        font-size: 3em;
+        color: gold;
+        font-family: 'Cinzel', serif;
+        background-color: $lineal2;
+        border-radius: 15px;
+        margin-top: 1em;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+
+    .build{
+    
+        border-radius: 2em;
+        color: #ffffff;
+        background: linear-gradient(to bottom,#051853 0,#62ace9 100%);
+        border-top: double $brp 0.3em;
+        border-left: double $brp 0.3em;
+        border-right: double $brp 0.3em;
+        border-bottom: double $brp 0.3em;
+        margin: 1.5em;
+        padding: 1.2em;
+        width: 50%;
+    }
+    .miniaturas{
+        margin: 3em;
+        border-radius: 0.5em;
+        width: 9em;
+        height: 15em;
+      }
+      
+      .miniaturas2{
+        margin: 3em;
+        border-radius: 0.5em;
+        width: 12em;
+        height: 19.5em;
+      }
+      
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }

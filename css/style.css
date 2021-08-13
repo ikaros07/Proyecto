@@ -1,0 +1,724 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: url(../multimedia/imagenes/fondo.png);
+  background-color: #221f1f;
+}
+
+.logo {
+  border-radius: 1em;
+  width: 12.5em;
+  height: 12.5em;
+}
+
+.logo2 {
+  border-radius: 1em;
+  width: 12.5em;
+  height: 12.5em;
+}
+
+.banner {
+  width: 100%;
+}
+
+.fondo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fondo-superposicion {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.navegacion {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e26464), to(#ff0606));
+  background: linear-gradient(to bottom, #e26464 0, #ff0606 100%);
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 1.3em 8.7em;
+  margin: auto;
+  color: white;
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #420606;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e26464), to(#ff0606));
+  background: linear-gradient(to bottom, #e26464 0, #ff0606 100%);
+  width: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+.submenu li a {
+  display: block;
+  padding: 1.3em;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Cinzel', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: gold;
+  font-family: 'Cinzel', serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+.sizeCarrousel {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.imgCarrousel {
+  border-radius: 2em;
+}
+
+div {
+  text-align: center;
+}
+
+p {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: none;
+  line-height: 1.5em;
+  color: white;
+}
+
+.parrafo1 {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: none;
+  line-height: 1.5em;
+  border-radius: 2em;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #051853), to(#62ace9));
+  background: linear-gradient(to bottom, #051853 0, #62ace9 100%);
+  border-top: double red 0.3em;
+  border-left: double red 0.3em;
+  border-right: double red 0.3em;
+  border-bottom: double red 0.3em;
+  margin: 1.5em;
+  padding: 1.8em;
+}
+
+.redes {
+  text-align: center;
+  line-height: 1.5em;
+  background-image: url(../multimedia/imagenes/fondo-2.jpg);
+}
+
+.redes a {
+  text-decoration: none;
+  margin: 0 0.2em;
+}
+
+.icons {
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.final{
+  background-image: url(../multimedia/imagenes/fondo-2.jpg);
+}
+
+.final a{
+  text-decoration: none;
+  margin: 0 0.2em;
+}
+
+.fondoDescargas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descargas {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.descargaIos {
+  left: 60em;
+  width: 12.5em;
+}
+
+.descargaAndroid {
+  left: 47em;
+  width: 12.5em;
+}
+
+.containerColor{
+  background-color: #c73333;
+}
+
+.containerGaleria {
+  background: url(../multimedia/imagenes/moroccan-flower-dark.png);
+  width: 90%;
+  margin: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border-radius: 2em;
+}
+
+.fanart {
+  width: 20em;
+  margin: 2em;
+  border-radius: 2em;
+}
+
+.tran1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.titulo1g {
+  background-color: brown;
+  border-radius: 25px;
+  max-width: 30%;
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  margin-right: auto;
+  padding: 0.5em;
+  font-size: 2.5em;
+}
+
+.torneo{
+  margin: 1.5em;
+  padding: 1em;
+  justify-content: center;
+}
+
+.bannerTorneo {
+  width: 90%;
+  border-radius: 1em;
+}
+
+.parrafo3 {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: center;
+  justify-content: center;
+  text-transform: none;
+  line-height: 1.5em;
+  border-radius: 2em;
+}
+
+.tituloFormulario {
+  font-size: 1.5em;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+.term {
+  font-size: 1.5em;
+}
+
+.formulario {
+  background-image: url(../multimedia/imagenes/moroccan-flower-dark.png);
+  border: #221b5f 0.3em solid;
+  border-radius: 2em;
+  margin: auto;
+  padding: 3em;
+  width: 30em;
+  height: 50em;
+}
+
+.controls {
+  width: 100%;
+  padding: #1239;
+  border-radius: 2em;
+  margin-bottom: 2em;
+  border: #221b5f 0.3em solid;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.parrafo2 {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: none;
+  line-height: 1.5em;
+  border-radius: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #051853), to(#62ace9));
+  background: linear-gradient(to bottom, #051853 0, #62ace9 100%);
+  border-top: dashed red 0.3em;
+  border-left: dashed red 0.3em;
+  border-right: dashed red 0.3em;
+  border-bottom: dashed red 0.3em;
+  margin: 1.5em;
+  padding: 1.8em;
+}
+
+.cajaPadre {
+  border: 0.6em #20f5c7 solid;
+  background-color: teal;
+  width: 90%;
+  max-width: 60em;
+  margin: 6em auto;
+  justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "uno uno uno"
+ "dos tres cuatro"
+ "cinco seis siete";
+}
+
+.caja {
+  width: 100%;
+  height: 6.5em;
+  border-radius: 2em7;
+  display: table-row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: uno;
+  font-size: 2em;
+  font-family: 'Cinzel', serif;
+  padding: 2em;
+  background-color: steelblue;
+}
+
+.dos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dos;
+}
+
+.tres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: tres;
+}
+
+.cuatro {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cuatro;
+}
+
+.cinco {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cinco;
+}
+
+.seis {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: seis;
+}
+
+.siete {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: siete;
+}
+
+.imgRef {
+  width: 0.5em;
+  height: 0.5em;
+  margin: 1.5em;
+  border-radius: 3px;
+}
+
+.cajaEquipamiento {
+  justify-content: initial;
+	line-height: 1.5em;
+  margin: 10em;
+}
+
+.heroeName {
+  font-size: 3em;
+  color: gold;
+	font-family: 'Cinzel', serif;
+  background-color: #ff0606;
+  border-radius: 15px;
+  margin-top: 1em;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
+}
+
+.build {
+  
+  border-radius: 2em;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom,#051853 0,#62ace9 100%);
+  border-top: double $brp 0.3em;
+  border-left: double $brp 0.3em;
+  border-right: double $brp 0.3em;
+  border-bottom: double $brp 0.3em;
+  margin: 1.5em;
+  padding: 1.2em;
+  width: 50%;
+}
+
+.miniaturas{
+  margin: 3em;
+  border-radius: 0.5em;
+  width: 9em;
+  height: 15em;
+}
+
+.miniaturas2{
+  margin: 3em;
+  border-radius: 0.5em;
+  width: 12em;
+  height: 19.5em;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# Comienzo Responsive */
+
+@media only screen and (max-width: 48em) {
+    
+  h1{
+     
+      font-size: 2em;
+  }
+
+  h2{
+     
+      font-size: 1.3em;
+  }
+
+  .menu > li > a { 
+    padding: 1.3em 4.7em;
+  }
+
+  .parrafo1{
+      font-size: 1em;
+
+  }
+
+  .parrafo2{
+      font-size: 1em;
+
+  }
+
+  p{
+      font-size: 1em;
+  }
+
+  .logo{
+      border-radius: 1em;
+      width: 3.5em;
+      height: 3.5em;
+  }
+  
+  .logo2{
+      border-radius: 1em;
+      width: 3.5em;
+      height: 3.5em;
+  }
+
+  .icons{
+      width: 1.8em;
+      height: 1.8em; 
+  }
+  
+  .containerGaleria{
+    margin: 1.3em;
+  }
+
+  .titulo1g{
+    border-radius: 27px;
+    max-width: min-content;
+    padding: 15px;
+    margin: center;
+    margin-top: 0.5em;
+  }
+
+  .torneo{
+    margin: 0;
+  }
+
+  .bannerTorneo{
+    width: 17em;
+    border-radius: 0.1em;
+    margin: auto;
+  }
+
+  .parrafo3{
+    font-size: 1em;
+  }
+
+  .containerGaleria{
+    width: 85%;
+  }
+
+  .fanart{
+      width: 5.5em;
+      margin: 1.3em;
+      border-radius: 1.2em;
+  }
+
+  .formulario {
+    width: 85%;
+    margin: 1.2em;
+  }
+
+  .descargaIos{
+      left: 20em;
+      width: 8em;
+      
+  }
+  
+  .descargaAndroid{
+      left: 15.6em;
+      width: 8em;
+  
+  }
+
+  .center{
+    width: 274px;
+    height: 154px;
+  }
+
+  .build{
+    border-radius: 0.5em;
+    width: 17em;
+  }
+
+  .miniaturas{
+    display:none;
+  }
+
+  .miniaturas2{
+    display:none;
+  }
+
+  .heroeName{
+    font-size: 1.5em;
+    width: 90%;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+@media only screen and (min-width: 48em) {
+  
+  h1{
+     
+      font-size: 3em;
+  }
+
+  h2{
+     
+      font-size: 2em;
+  }
+
+  .parrafo1{
+      font-size: 1.2em;
+
+  }
+
+  .parrafo2{
+      font-size: 1.2em;
+
+  }
+
+  p{
+      font-size: 1.4em;
+  }
+
+  .logo{
+      border-radius: 1em;
+      width: 9.5em;
+      height: 9.5em;
+  }
+  
+  .logo2{
+      border-radius: 1em;
+      width: 9.5em;
+      height: 9.5em;
+  }
+
+  .fanart{
+      width: 14em;
+      margin: 1.5em;
+      border-radius: 1.5em;
+  }
+  
+  .descargaIos{
+      left: 40em;
+      width: 10em;
+      
+  }
+  
+  .descargaAndroid{
+      left: 30em;
+      width: 10em;
+  
+  }
+}
+@media only screen and (min-width: 64em) {
+ 
+  h1{
+     
+      font-size: 3em;
+  }
+
+  h2{
+     
+      font-size: 2.8em;
+  }
+
+  .parrafo1{
+      font-size: 1.7em;
+
+  }
+
+  .parrafo2{
+      font-size: 1.7em;
+
+  }
+
+  p{
+      font-size: 1.5em;
+  }
+
+  .logo{
+      border-radius: 1em;
+      width: 12.5em;
+      height: 12.5em;
+  }
+  
+  .logo2{
+      border-radius: 1em;
+      width: 12.5em;
+      height: 12.5em;
+  }
+
+  .fanart{
+      width: 20em;
+      margin: 2em;
+      border-radius: 2em;
+  }
+  
+  .descargaIos{
+      left: 60em;
+      width: 12.5em;
+      
+  }
+  
+  .descargaAndroid{
+      left: 47em;
+      width: 12.5em;
+  
+  }
+  
+}
+
+/*#Final Responsive*/
+
+/*# sourceMappingURL=style.css.map */
